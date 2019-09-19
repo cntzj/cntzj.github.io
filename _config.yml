@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: 'your awesome title'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
-url: 'https://abc.github.io' # your host
+title: '11'
+description: '22'
+keywords: '33, 44'
+url: 'https://cntzj.github.io' # your host
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
@@ -13,10 +13,10 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   友情链接: '/friendLink.html'
 
 # 博主
-author: true
-name: 'your awesome name'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
+author: rr
+name: 'ee'
+NickName: 'ww'
+webtitle: '77chaos'
 bio: 'your awesome bio'
 about: true
 aboutyou: 'your introduction'
