@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: '11'
+title: 'tzj'
 description: '22'
 keywords: '33, 44'
 url: 'https://cntzj.github.io' # your host
@@ -9,36 +9,36 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   首页: '/'
   标签: '/tags.html'
   时间线: '/timeline.html'
-  关于博主: '/about.html'
-  友情链接: '/friendLink.html'
+  关于他爹: '/about.html'
+#  友情链接: '/friendLink.html'
 
 # 博主
-author: rr
-name: 'ee'
-NickName: 'ww'
+author: tzj
+name: 'tzj'
+NickName: 'tzj'
 webtitle: '77chaos'
-bio: 'your awesome bio'
+bio: ''
 about: true
-aboutyou: 'your introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+aboutyou: '好'
+portraits: '/assets/profile.jpg' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
+#  mail: 'tanzejie.cn@gmail.com'
+  weixin: '/assets/wechat.jpg' # 你的微信二维码存放的地址
+#  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+#   github: ''
+#   Codepen: ''
+  weibo: 'https://weibo.com/p/1005052905385201/home?from=page_100505&mod=TAB&is_all=1#place'
+#   instagram: ''
+#   Twitter: ''
+#   Dribbble: ''
+#   Facebook: ''
+#   Google: ''
+#   zhihu: ''
+#   juejin: ''
+#   twitch: ''
 
 # 分页
 paginate: 2
@@ -46,7 +46,7 @@ paginatepath: ['page:num']
 
 # since
 footer:
-  since: 2018
+  since: 1996
 
 # Markdown
 markdown: kramdown
@@ -58,33 +58,33 @@ highlighter: rouge
 pygmentsTheme: 'default'
 
 # 友情链接
-friends:
-  jekyll: 'https://www.jekyll.com.cn/'
+#friends:
+#  jekyll: 'https://www.jekyll.com.cn/'
 
 # 评论 最佳体验 在disqus、livere和Gitment之间三选一
 # disqus 评论
-disqus: false
-disqus_url: '' # https://abc.disqus.com/embed.js
+#disqus: false
+#disqus_url: '' # https://abc.disqus.com/embed.js
 # 来必力评论
 livere: true
 livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg==
 # Gitment评论 OAuth Application
-Gitment: false
-Gitment_owner: ''  # github用户名
-Gitment_repo: ''  # github博客存放的仓库名
-client_id: ''  # 注册 OAuth Application 后获得的 client_id
-client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
+#Gitment: false
+#Gitment_owner: ''  # github用户名
+#Gitment_repo: ''  # github博客存放的仓库名
+#client_id: ''  # 注册 OAuth Application 后获得的 client_id
+#client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
 
 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
 social-share: true
-social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+social-share-items: ['qq', 'wechat', 'weibo', ]
 
 # 百度统计 在baidu-url里填写自己相关的url代码
-baidu: true
-baidu-url: ''
+#baidu: true
+#baidu-url: ''
 # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: false
-google-ID: ''
+#google: false
+#google-ID: ''
 
 # 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
 color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
