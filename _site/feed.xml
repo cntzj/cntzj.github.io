@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-20T12:02:58+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">发张他拍试一试</title><link href="http://localhost:4000/2019/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="发张他拍试一试" /><published>2019-09-19T14:05:21+08:00</published><updated>2019-09-19T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/09/19/welcome-to-jekyll.html">&lt;!--
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-20T21:22:53+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">URDF机器人建模</title><link href="http://localhost:4000/2019/09/20/URDF.html" rel="alternate" type="text/html" title="URDF机器人建模" /><published>2019-09-20T14:05:21+08:00</published><updated>2019-09-20T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/20/URDF</id><content type="html" xml:base="http://localhost:4000/2019/09/20/URDF.html">&lt;h2 id=&quot;机器人的定义与组成&quot;&gt;机器人的定义与组成&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568953189251.png&quot; alt=&quot;1568953189251&quot; style=&quot;zoom: 40%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;urdf建模方法&quot;&gt;URDF建模方法&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568953503695.png&quot; alt=&quot;1568953503695&quot; style=&quot;zoom: 67%;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568953787563.png&quot; alt=&quot;1568953787563&quot; style=&quot;zoom:40%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;​	link 参数中包含&lt;strong&gt;visual&lt;/strong&gt;与&lt;strong&gt;collision&lt;/strong&gt;，后者在实际工程中，一般用规则的矩形框来限制不规则的visual。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568953989608.png&quot; alt=&quot;1568953989608&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568954466686.png&quot; alt=&quot;1568954466686&quot; style=&quot;zoom:45%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;​	panar与floating在机器人建模中用的是比较少的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568954907215.png&quot; alt=&quot;1568954907215&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用robot标签将&lt;strong&gt;link&lt;/strong&gt;与&lt;strong&gt;joint&lt;/strong&gt;包含起来组成完整的机器人模型。&lt;/p&gt;
+
+&lt;h2 id=&quot;urdf机器人模型案例分析&quot;&gt;URDF机器人模型案例分析&lt;/h2&gt;
+
+&lt;h3 id=&quot;创建机器人建模功能包&quot;&gt;创建机器人建模功能包&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568955396046.png&quot; alt=&quot;1568955396046&quot; style=&quot;zoom:70%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;​	功能包中新建上述四个文件夹。
+​	功能包的两个依赖：&lt;strong&gt;urdf&lt;/strong&gt;与&lt;strong&gt;xacro&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;创建机器人模型&quot;&gt;创建机器人模型&lt;/h3&gt;
+
+&lt;p&gt;​	在urdf文件夹中添加.urdf文件&lt;/p&gt;
+
+&lt;h3 id=&quot;模型在rviz中的可视化显示&quot;&gt;模型在rviz中的可视化显示&lt;/h3&gt;
+
+&lt;p&gt;​	使用launch文件&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;launch&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;param&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;robot_description&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textfile=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;$(find mbot_description)/urdf/mbot_base.urdf&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 设置GUI参数，显示关节控制插件 --&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;param&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;use_gui&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+	
+	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 运行joint_state_publisher节点，发布机器人的关节状态  --&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;node&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;joint_state_publisher&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pkg=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;joint_state_publisher&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;joint_state_publisher&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+	
+	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 运行robot_state_publisher节点，发布tf  --&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;node&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;robot_state_publisher&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pkg=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;robot_state_publisher&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;state_publisher&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+	
+	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 运行rviz可视化界面 --&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;node&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rviz&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pkg=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rviz&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rviz&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;args=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-d $(find mbot_description)/config/mbot_urdf.rviz&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;required=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/launch&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	进行编译。&lt;/p&gt;
+
+&lt;p&gt;​	进行简单的配置：&lt;strong&gt;add robotModel&lt;/strong&gt; ，将Fixed Frame修改成base_link。&lt;/p&gt;
+
+&lt;p&gt;​	如果不想每次启动都修改都重新配置一次，那么使用 &lt;strong&gt;Save Config&lt;/strong&gt;保存配置文件&lt;/p&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">机器人的定义与组成</summary></entry><entry><title type="html">发张他拍试一试</title><link href="http://localhost:4000/2019/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="发张他拍试一试" /><published>2019-09-19T14:05:21+08:00</published><updated>2019-09-19T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/09/19/welcome-to-jekyll.html">&lt;!--
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
