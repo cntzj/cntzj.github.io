@@ -9,4 +9,4 @@ subtitle: '发张他拍试一试'
 ---
 
 
-<img src="/assets/QQMail_0.jpg" alt="tapai" style="zoom:30%;" />
+<img src="/assets/QQMail_0.jpg" alt="tapai" style="zoom:100%;" />
