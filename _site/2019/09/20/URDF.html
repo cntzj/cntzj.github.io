@@ -148,7 +148,7 @@
 
 <hr />
 
-<p><img src="/assets/9.20/1568953787563.png" alt="1568953787563" style="zoom:40%;" /></p>
+<p><img src="/assets/9.20/1568953787563.png" alt="1568953787563" style="zoom:80%;" /></p>
 
 <p>​	link 参数中包含<strong>visual</strong>与<strong>collision</strong>，后者在实际工程中，一般用规则的矩形框来限制不规则的visual。</p>
 
@@ -179,7 +179,57 @@
 
 <p>​	在urdf文件夹中添加.urdf文件</p>
 
-<h3 id="模型在rviz中的可视化显示">模型在rviz中的可视化显示</h3>
+<h4 id="创建一个底盘">创建一个底盘</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">name=</span><span class="s">"base_link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;visual&gt;</span>
+            <span class="nt">&lt;origin</span> <span class="na">xyz=</span><span class="s">" 0 0 0"</span> <span class="na">rpy=</span><span class="s">"0 0 0"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;geometry&gt;</span>
+                <span class="nt">&lt;cylinder</span> <span class="na">length=</span><span class="s">"0.16"</span> <span class="na">radius=</span><span class="s">"0.20"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/geometry&gt;</span>
+            <span class="nt">&lt;material</span> <span class="na">name=</span><span class="s">"yellow"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;color</span> <span class="na">rgba=</span><span class="s">"1 0.4 0 1"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/material&gt;</span>
+        <span class="nt">&lt;/visual&gt;</span>
+    <span class="nt">&lt;/link&gt;</span>
+</code></pre></div></div>
+
+<p>​	这里只对可视化部分visual做描述其中origin代表坐标偏移，geometry代表模型形态，material代表模型颜色，是根据color中rgba来描述的，其中a表示透明度。</p>
+
+<h4 id="创建轮子">创建轮子</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">name=</span><span class="s">"left_wheel_link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;visual&gt;</span>
+            <span class="nt">&lt;origin</span> <span class="na">xyz=</span><span class="s">"0 0 0"</span> <span class="na">rpy=</span><span class="s">"1.5707 0 0"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;geometry&gt;</span>
+                <span class="nt">&lt;cylinder</span> <span class="na">radius=</span><span class="s">"0.06"</span> <span class="na">length =</span> <span class="s">"0.025"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/geometry&gt;</span>
+            <span class="nt">&lt;material</span> <span class="na">name=</span><span class="s">"white"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;color</span> <span class="na">rgba=</span><span class="s">"1 1 1 0.9"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/material&gt;</span>
+        <span class="nt">&lt;/visual&gt;</span>
+    <span class="nt">&lt;/link&gt;</span>
+</code></pre></div></div>
+
+<p>​	与上一节类似，只不过对其做了一个旋转。</p>
+
+<h4 id="将底盘与轮子做链接">将底盘与轮子做链接</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;joint</span> <span class="na">name=</span><span class="s">"left_wheel_joint"</span> <span class="na">type=</span><span class="s">"continuous"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;origin</span> <span class="na">xyz=</span><span class="s">"0 0.19 -0.05"</span> <span class="na">rpy=</span><span class="s">"0 0 0"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;parent</span> <span class="na">link=</span><span class="s">"base_link"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;child</span> <span class="na">link=</span><span class="s">"left_wheel_link"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;axis</span> <span class="na">xyz=</span><span class="s">"0 1 0"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/joint&gt;</span>
+</code></pre></div></div>
+
+<p>​	type描述关节运动类型，parent和child分别描述这个关节链接哪两个link，axis描述旋转轴。</p>
+
+<h4 id="添加传感器">添加传感器</h4>
+
+<p>​	在添加传感器时，如果需要加载传感器外观模型，可以在geometry中使用mesh标签达到目的，模型文件应该存放在meshes中。</p>
+
+<h3 id="parent模型在rviz中的可视化显示">parent模型在rviz中的可视化显示</h3>
 
 <p>​	使用launch文件</p>
 
@@ -205,6 +255,23 @@
 <p>​	进行简单的配置：<strong>add robotModel</strong> ，将Fixed Frame修改成base_link。</p>
 
 <p>​	如果不想每次启动都修改都重新配置一次，那么使用 <strong>Save Config</strong>保存配置文件</p>
+
+<h3 id="检查urdf模型整体结构">检查URDF模型整体结构</h3>
+
+<p>​	urdf_to_graphiz</p>
+
+<h3 id="urdf建模存在的问题">URDF建模存在的问题</h3>
+
+<ul>
+  <li>模型冗长，重复内容过多</li>
+  <li>参数修改麻烦，不便于二次开发</li>
+  <li>没有参数计算的功能</li>
+  <li>…</li>
+</ul>
+
+<h2 id="总结">总结</h2>
+
+<p><img src="/assets/9.20/1568991215986.png" alt="1568991215986" style="zoom:80%;" /></p>
 
 
   <!-- 引入share模块 -->

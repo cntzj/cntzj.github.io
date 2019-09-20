@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-20T22:19:39+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">《Inside Bill’s Brain》-Philip Davis Guggenheim</title><link href="http://localhost:4000/2019/09/20/bill's-brain.html" rel="alternate" type="text/html" title="《Inside Bill's Brain》-Philip Davis Guggenheim" /><published>2019-09-20T19:05:21+08:00</published><updated>2019-09-20T19:05:21+08:00</updated><id>http://localhost:4000/2019/09/20/bill's%20brain</id><content type="html" xml:base="http://localhost:4000/2019/09/20/bill's-brain.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-20T22:58:54+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">《Inside Bill’s Brain》-Philip Davis Guggenheim</title><link href="http://localhost:4000/2019/09/20/bill's-brain.html" rel="alternate" type="text/html" title="《Inside Bill's Brain》-Philip Davis Guggenheim" /><published>2019-09-20T19:05:21+08:00</published><updated>2019-09-20T19:05:21+08:00</updated><id>http://localhost:4000/2019/09/20/bill's%20brain</id><content type="html" xml:base="http://localhost:4000/2019/09/20/bill's-brain.html">&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;他竟然不吃早餐！&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;10 亿人口只能「露天如厕」。超过 40 亿人口的排泄物（包括许多拥有污水处理系统的地区）并没有进行安全处理。&lt;/strong&gt;&lt;/p&gt;
@@ -17,7 +17,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568953787563.png&quot; alt=&quot;1568953787563&quot; style=&quot;zoom:40%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568953787563.png&quot; alt=&quot;1568953787563&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;​	link 参数中包含&lt;strong&gt;visual&lt;/strong&gt;与&lt;strong&gt;collision&lt;/strong&gt;，后者在实际工程中，一般用规则的矩形框来限制不规则的visual。&lt;/p&gt;
 
@@ -48,7 +48,57 @@
 
 &lt;p&gt;​	在urdf文件夹中添加.urdf文件&lt;/p&gt;
 
-&lt;h3 id=&quot;模型在rviz中的可视化显示&quot;&gt;模型在rviz中的可视化显示&lt;/h3&gt;
+&lt;h4 id=&quot;创建一个底盘&quot;&gt;创建一个底盘&lt;/h4&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;base_link&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;visual&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;origin&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xyz=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; 0 0 0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rpy=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 0 0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;geometry&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;cylinder&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;length=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0.16&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;radius=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0.20&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/geometry&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;material&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yellow&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;color&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rgba=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1 0.4 0 1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/material&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/visual&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	这里只对可视化部分visual做描述其中origin代表坐标偏移，geometry代表模型形态，material代表模型颜色，是根据color中rgba来描述的，其中a表示透明度。&lt;/p&gt;
+
+&lt;h4 id=&quot;创建轮子&quot;&gt;创建轮子&lt;/h4&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left_wheel_link&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;visual&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;origin&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xyz=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 0 0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rpy=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.5707 0 0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;geometry&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;cylinder&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;radius=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0.06&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;length =&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;0.025&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/geometry&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;material&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;white&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;color&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rgba=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1 1 1 0.9&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/material&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/visual&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	与上一节类似，只不过对其做了一个旋转。&lt;/p&gt;
+
+&lt;h4 id=&quot;将底盘与轮子做链接&quot;&gt;将底盘与轮子做链接&lt;/h4&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;joint&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left_wheel_joint&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;continuous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;origin&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xyz=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 0.19 -0.05&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rpy=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 0 0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;parent&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;link=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;base_link&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;child&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;link=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left_wheel_link&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;axis&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xyz=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 1 0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/joint&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	type描述关节运动类型，parent和child分别描述这个关节链接哪两个link，axis描述旋转轴。&lt;/p&gt;
+
+&lt;h4 id=&quot;添加传感器&quot;&gt;添加传感器&lt;/h4&gt;
+
+&lt;p&gt;​	在添加传感器时，如果需要加载传感器外观模型，可以在geometry中使用mesh标签达到目的，模型文件应该存放在meshes中。&lt;/p&gt;
+
+&lt;h3 id=&quot;parent模型在rviz中的可视化显示&quot;&gt;parent模型在rviz中的可视化显示&lt;/h3&gt;
 
 &lt;p&gt;​	使用launch文件&lt;/p&gt;
 
@@ -73,4 +123,21 @@
 
 &lt;p&gt;​	进行简单的配置：&lt;strong&gt;add robotModel&lt;/strong&gt; ，将Fixed Frame修改成base_link。&lt;/p&gt;
 
-&lt;p&gt;​	如果不想每次启动都修改都重新配置一次，那么使用 &lt;strong&gt;Save Config&lt;/strong&gt;保存配置文件&lt;/p&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">机器人的定义与组成</summary></entry><entry><title type="html">发张他拍试一试</title><link href="http://localhost:4000/2019/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="发张他拍试一试" /><published>2019-09-19T14:05:21+08:00</published><updated>2019-09-19T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/09/19/welcome-to-jekyll.html">&lt;p&gt;&lt;img src=&quot;/assets/QQMail_0.jpg&quot; alt=&quot;tapai&quot; style=&quot;zoom:100%;&quot; /&gt;&lt;/p&gt;</content><author><name>tzj</name></author><category term="photo" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;​	如果不想每次启动都修改都重新配置一次，那么使用 &lt;strong&gt;Save Config&lt;/strong&gt;保存配置文件&lt;/p&gt;
+
+&lt;h3 id=&quot;检查urdf模型整体结构&quot;&gt;检查URDF模型整体结构&lt;/h3&gt;
+
+&lt;p&gt;​	urdf_to_graphiz&lt;/p&gt;
+
+&lt;h3 id=&quot;urdf建模存在的问题&quot;&gt;URDF建模存在的问题&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;模型冗长，重复内容过多&lt;/li&gt;
+  &lt;li&gt;参数修改麻烦，不便于二次开发&lt;/li&gt;
+  &lt;li&gt;没有参数计算的功能&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.20/1568991215986.png&quot; alt=&quot;1568991215986&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">机器人的定义与组成</summary></entry><entry><title type="html">发张他拍试一试</title><link href="http://localhost:4000/2019/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="发张他拍试一试" /><published>2019-09-19T14:05:21+08:00</published><updated>2019-09-19T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/09/19/welcome-to-jekyll.html">&lt;p&gt;&lt;img src=&quot;/assets/QQMail_0.jpg&quot; alt=&quot;tapai&quot; style=&quot;zoom:100%;&quot; /&gt;&lt;/p&gt;</content><author><name>tzj</name></author><category term="photo" /><summary type="html"></summary></entry></feed>
