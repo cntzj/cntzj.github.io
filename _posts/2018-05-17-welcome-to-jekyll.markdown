@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "发张他拍试一试"
+title:  ""
 date:   2019-09-19 14:05:21 +0800
 tags: photo
 color: rgb(255,90,90)
-cover: '../assets/tapai.jpg'
-subtitle: '看看我的最近努力健身的成果'
+cover: '../assets/QQMail_0.jpg'
+subtitle: '发张他拍试一试'
 ---
 <!--
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -29,4 +29,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-talk]: https://talk.jekyllrb.com/
 -->
 
-<img src="/assets/tapai.jpg" alt="tapai" style="zoom:80%;" />
+<img src="/assets/QQMail_0.jpg" alt="tapai" style="zoom:20%;transform:rotate(90deg);" />
