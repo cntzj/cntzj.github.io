@@ -26,11 +26,11 @@ portraits: '/assets/profile.jpg' # your portraits image file path
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
 #  mail: 'tanzejie.cn@gmail.com'
-  weixin: '/assets/wechat.jpg' # 你的微信二维码存放的地址
+#  weixin: '/assets/wechat.jpg' # 你的微信二维码存放的地址
 #  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
 #   github: ''
 #   Codepen: ''
-  weibo: 'https://weibo.com/p/1005052905385201/home?from=page_100505&mod=TAB&is_all=1#place'
+#  weibo: 'https://weibo.com/p/1005052905385201/home?from=page_100505&mod=TAB&is_all=1#place'
 #   instagram: ''
 #   Twitter: ''
 #   Dribbble: ''
