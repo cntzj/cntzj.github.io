@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-21T20:20:14+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">《彩色的中国》-翁乃强</title><link href="http://localhost:4000/2019/09/21/%E5%BD%A9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%9B%BD-%E7%BF%81%E4%B9%83%E5%BC%BA.html" rel="alternate" type="text/html" title="《彩色的中国》-翁乃强" /><published>2019-09-21T14:05:21+08:00</published><updated>2019-09-21T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/21/%E3%80%8A%E5%BD%A9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%9B%BD%E3%80%8B-%E7%BF%81%E4%B9%83%E5%BC%BA</id><content type="html" xml:base="http://localhost:4000/2019/09/21/%E5%BD%A9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%9B%BD-%E7%BF%81%E4%B9%83%E5%BC%BA.html">&lt;p&gt;&lt;strong&gt;太美了&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-23T15:57:08+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">机器视觉处理</title><link href="http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86.html" rel="alternate" type="text/html" title="机器视觉处理" /><published>2019-09-22T01:05:21+08:00</published><updated>2019-09-22T01:05:21+08:00</updated><id>http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86</id><content type="html" xml:base="http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86.html">&lt;h2 id=&quot;1-ros摄像头驱动及数据接口&quot;&gt;1. ROS摄像头驱动及数据接口&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-rgd摄像头&quot;&gt;1.1 RGD摄像头&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569119924188.png&quot; alt=&quot;1569119924188&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120228410.png&quot; alt=&quot;1569120228410&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120332502.png&quot; alt=&quot;1569120332502&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;12-rgb-d摄像头&quot;&gt;1.2 RGB-D摄像头&lt;/h3&gt;
+
+&lt;h4 id=&quot;121-kinect&quot;&gt;1.2.1 Kinect&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120626907.png&quot; alt=&quot;1569120626907&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120645933.png&quot; alt=&quot;1569120645933&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120682175.png&quot; alt=&quot;1569120682175&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;122-realsense&quot;&gt;1.2.2 realsense&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120807279.png&quot; alt=&quot;1569120807279&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120821629.png&quot; alt=&quot;1569120821629&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120867217.png&quot; alt=&quot;1569120867217&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-摄像头参数标定&quot;&gt;2. 摄像头参数标定&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-rgb摄像头&quot;&gt;2.1 RGB摄像头&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120902125.png&quot; alt=&quot;1569120902125&quot; style=&quot;zoom: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569120979741.png&quot; alt=&quot;1569120979741&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;22-rgb-d摄像头kinect&quot;&gt;2.2 RGB-D摄像头(Kinect)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569222852876.png&quot; alt=&quot;1569222852876&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569222859440.png&quot; alt=&quot;1569222859440&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569222877644.png&quot; alt=&quot;1569222877644&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-rosopencv图像处理方法及案例&quot;&gt;3. ROS+OpenCV图像处理方法及案例&lt;/h2&gt;
+
+&lt;h3 id=&quot;31-安装&quot;&gt;3.1 安装&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569223276282.png&quot; alt=&quot;1569223276282&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569223436821.png&quot; alt=&quot;1569223436821&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;启动摄像头驱动&lt;/p&gt;
+
+&lt;p&gt;启动cv_bridge作转换并对图像做简单处理&lt;/p&gt;
+
+&lt;p&gt;作显示&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569223630979.png&quot; alt=&quot;1569223630979&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;cv_bridge两个关键的函数&lt;/p&gt;
+
+&lt;h3 id=&quot;32-实例人脸识别&quot;&gt;3.2 实例(人脸识别)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569223958913.png&quot; alt=&quot;1569223958913&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569224280807.png&quot; alt=&quot;1569224280807&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;关键步骤&lt;/p&gt;
+
+&lt;h2 id=&quot;4-rostensorflow&quot;&gt;4. ROS+Tensorflow&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569224575769.png&quot; alt=&quot;1569224575769&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569224589990.png&quot; alt=&quot;1569224589990&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-总结&quot;&gt;5. 总结&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.22/1569225188827.png&quot; alt=&quot;1569225188827&quot; /&gt;&lt;/p&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">1. ROS摄像头驱动及数据接口</summary></entry><entry><title type="html">《彩色的中国》-翁乃强</title><link href="http://localhost:4000/2019/09/21/%E5%BD%A9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%9B%BD-%E7%BF%81%E4%B9%83%E5%BC%BA.html" rel="alternate" type="text/html" title="《彩色的中国》-翁乃强" /><published>2019-09-21T14:05:21+08:00</published><updated>2019-09-21T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/21/%E3%80%8A%E5%BD%A9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%9B%BD%E3%80%8B-%E7%BF%81%E4%B9%83%E5%BC%BA</id><content type="html" xml:base="http://localhost:4000/2019/09/21/%E5%BD%A9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%9B%BD-%E7%BF%81%E4%B9%83%E5%BC%BA.html">&lt;p&gt;&lt;strong&gt;太美了&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;太美了&lt;/strong&gt;&lt;/p&gt;
 
@@ -66,11 +144,82 @@
   &lt;li&gt;在机器人模型中添加控制器插件&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569068706850.png&quot; alt=&quot;1569068706850&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;property，使用${}做调用，在期间可以做加减乘数的计算。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569068816892.png&quot; alt=&quot;1569068816892&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;macro，其中ABC是模型输入参数。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569069285956.png&quot; alt=&quot;1569069285956&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ros_control&quot;&gt;ros_control&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569069443559.png&quot; alt=&quot;1569069443559&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569069478237.png&quot; alt=&quot;1569069478237&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;控制管理器&lt;/li&gt;
+  &lt;li&gt;控制器&lt;img src=&quot;/assets/9.21/1569069734270.png&quot; alt=&quot;1569069734270&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;硬件资源&lt;/li&gt;
+  &lt;li&gt;机器人硬件抽象&lt;/li&gt;
+  &lt;li&gt;真实机器人&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;优化步骤&quot;&gt;优化步骤&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;为link添加惯性参数和碰撞属性（数据可由第三方软件导出）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;为link添加gazeboo标签&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;为joint添加传动装置&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;添加gazebo控制器插件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在gazebo中加载机器人模型&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其中关键的两步&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569070214270.png&quot; alt=&quot;1569070214270&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569070226559.png&quot; alt=&quot;1569070226559&quot; /&gt;&lt;/p&gt;
+
 &lt;h1 id=&quot;创建物理仿真环境&quot;&gt;创建物理仿真环境&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;直接添加环境模型&lt;/li&gt;
+  &lt;li&gt;使用Building Editor&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h1 id=&quot;传感器仿真及应用&quot;&gt;传感器仿真及应用&lt;/h1&gt;
 
-&lt;h1 id=&quot;总结&quot;&gt;总结&lt;/h1&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">优化物理仿真模型</summary></entry><entry><title type="html">《Inside Bill’s Brain》-Philip Davis Guggenheim</title><link href="http://localhost:4000/2019/09/20/bill's-brain.html" rel="alternate" type="text/html" title="《Inside Bill's Brain》-Philip Davis Guggenheim" /><published>2019-09-20T19:05:21+08:00</published><updated>2019-09-20T19:05:21+08:00</updated><id>http://localhost:4000/2019/09/20/bill's%20brain</id><content type="html" xml:base="http://localhost:4000/2019/09/20/bill's-brain.html">&lt;ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;摄像头(RGB)仿真&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/9.21/1569071751148.png&quot; alt=&quot;1569071751148&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;摄像头(RGB-D)仿真&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;激光雷达仿真&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;总结&quot;&gt;总结&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.21/1569072656065.png&quot; alt=&quot;1569072656065&quot; /&gt;&lt;/p&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">优化物理仿真模型</summary></entry><entry><title type="html">《Inside Bill’s Brain》-Philip Davis Guggenheim</title><link href="http://localhost:4000/2019/09/20/bill's-brain.html" rel="alternate" type="text/html" title="《Inside Bill's Brain》-Philip Davis Guggenheim" /><published>2019-09-20T19:05:21+08:00</published><updated>2019-09-20T19:05:21+08:00</updated><id>http://localhost:4000/2019/09/20/bill's%20brain</id><content type="html" xml:base="http://localhost:4000/2019/09/20/bill's-brain.html">&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;他竟然不吃早餐！&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;10 亿人口只能「露天如厕」。超过 40 亿人口的排泄物（包括许多拥有污水处理系统的地区）并没有进行安全处理。&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;脊髓灰质炎&lt;/strong&gt;&lt;/li&gt;
