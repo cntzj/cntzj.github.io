@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-23T16:00:07+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">机器视觉处理</title><link href="http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86.html" rel="alternate" type="text/html" title="机器视觉处理" /><published>2019-09-22T14:05:21+08:00</published><updated>2019-09-22T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86</id><content type="html" xml:base="http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86.html">&lt;h2 id=&quot;1-ros摄像头驱动及数据接口&quot;&gt;1. ROS摄像头驱动及数据接口&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-24T14:42:50+08:00</updated><id>http://localhost:4000/</id><title type="html">tzj</title><subtitle>22</subtitle><author><name>tzj</name></author><entry><title type="html">机器人SLAM建图</title><link href="http://localhost:4000/2019/09/24/%E6%9C%BA%E5%99%A8%E4%BA%BASLAM%E5%BB%BA%E5%9B%BE.html" rel="alternate" type="text/html" title="机器人SLAM建图" /><published>2019-09-24T14:05:21+08:00</published><updated>2019-09-24T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/24/%E6%9C%BA%E5%99%A8%E4%BA%BASLAM%E5%BB%BA%E5%9B%BE</id><content type="html" xml:base="http://localhost:4000/2019/09/24/%E6%9C%BA%E5%99%A8%E4%BA%BASLAM%E5%BB%BA%E5%9B%BE.html">&lt;h2 id=&quot;1-slam原理简介&quot;&gt;1. SLAM原理简介&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569302510859.png&quot; alt=&quot;1569302510859&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569302540018.png&quot; alt=&quot;1569302540018&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;SLAM算法的基本过程&lt;/p&gt;
+
+&lt;h2 id=&quot;2--ros机器人配置与数据结构&quot;&gt;2.  ROS机器人配置与数据结构&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569302939600.png&quot; alt=&quot;1569302939600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569302963789.png&quot; alt=&quot;1569302963789&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;里程计信息，主要包括pose(位置坐标)和twist(运动状态)，在ROS中都是右手坐标系。&lt;/p&gt;
+
+&lt;h2 id=&quot;3-常用slam功能包应用&quot;&gt;3. 常用SLAM功能包应用&lt;/h2&gt;
+
+&lt;h3 id=&quot;31-gmapping&quot;&gt;3.1 gmapping&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569303160035.png&quot; alt=&quot;1569303160035&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569303206296.png&quot; alt=&quot;1569303206296&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569303271833.png&quot; alt=&quot;1569303271833&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;32-hector&quot;&gt;3.2 hector&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569303968622.png&quot; alt=&quot;1569303968622&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569303979045.png&quot; alt=&quot;1569303979045&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;适合没有里程计的机器人，或者在地面不平整的路况下运行的机器人，因为路况不平整里程计信息反而会影响建图的准确性。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569304070409.png&quot; alt=&quot;1569304070409&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;33-cartographer&quot;&gt;3.3 cartographer&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569305305863.png&quot; alt=&quot;1569305305863&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;基于图网络优化&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569305547641.png&quot; alt=&quot;1569305547641&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;保存地图方式&lt;/p&gt;
+
+&lt;h3 id=&quot;34-rtabmap&quot;&gt;3.4 rtabmap&lt;/h3&gt;
+
+&lt;p&gt;三维建图功能包&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;4-总结&quot;&gt;4. 总结&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/9.24/1569306986751.png&quot; alt=&quot;1569306986751&quot; /&gt;&lt;/p&gt;</content><author><name>tzj</name></author><category term="ROS" /><summary type="html">1. SLAM原理简介</summary></entry><entry><title type="html">机器视觉处理</title><link href="http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86.html" rel="alternate" type="text/html" title="机器视觉处理" /><published>2019-09-22T14:05:21+08:00</published><updated>2019-09-22T14:05:21+08:00</updated><id>http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86</id><content type="html" xml:base="http://localhost:4000/2019/09/22/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%E5%A4%84%E7%90%86.html">&lt;h2 id=&quot;1-ros摄像头驱动及数据接口&quot;&gt;1. ROS摄像头驱动及数据接口&lt;/h2&gt;
 
 &lt;h3 id=&quot;11-rgd摄像头&quot;&gt;1.1 RGD摄像头&lt;/h3&gt;
 
