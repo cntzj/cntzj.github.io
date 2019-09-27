@@ -1,0 +1,528 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="22" />
+<meta name="keywords" content="33, 44" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>《The Crown》Season 1-Peter Morgan</title>
+<!-- 百度统计 -->
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(125,25,12) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(125,25,12);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">77chaos</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于他爹</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于他爹</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">《The Crown》Season 1-Peter Morgan</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;tzj</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(125,25,12);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(125,25,12)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(125,25,12);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">《The Crown》Season 1-Peter Morgan</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;tzj</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/09/24/%E6%9C%BA%E5%99%A8%E4%BA%BASLAM%E5%BB%BA%E5%9B%BE.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(125,25,12)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(125,25,12);"><sapn class="main">机器人SLAM建图</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(125,25,12);border-bottom: 2px solid rgb(125,25,12);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2019/09/24/%E6%9C%BA%E5%99%A8%E4%BA%BASLAM%E5%BB%BA%E5%9B%BE.html" class="rightchange" style="border-left: 1px solid rgb(125,25,12);border-bottom: 2px solid rgb(125,25,12);"><span>下一篇<br><br>机器人SLAM建图</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(125,25,12); border-right: 8px solid rgb(125,25,12)">
+        《The Crown》Season 1
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <h2 id="ep1">EP1</h2>
+
+<p>片头节奏让人想到西部世界（八竿子打不着的关系）。</p>
+
+<p><img src="/assets/9.27/clip_image002.jpg" alt="img" /></p>
+
+<p>丘吉尔的入场太帅咯。</p>
+
+<blockquote>
+  <p>“不不，他还以为自己是国父。”</p>
+</blockquote>
+
+<p><img src="/assets/9.27/clip_image004.jpg" alt="img" /></p>
+
+<p>好美，我晕。</p>
+
+<blockquote>
+  <p>“还有谁知道这个事情？” “没有人，包括他自己。”</p>
+</blockquote>
+
+<p><img src="/assets/9.27/clip_image006.jpg" alt="img" /></p>
+
+<p><img src="/assets/9.27/clip_image008.jpg" alt="img" /></p>
+
+<p><img src="/assets/9.27/clip_image010.jpg" alt="img" /></p>
+
+<h2 id="ep2">EP2</h2>
+
+<p>菲利普好蠢啊！！！！好莽撞啊！！！！！！为什么他总是裸睡啊！！！！！！！但是和小孩子之间的关系又觉得他挺可爱的。</p>
+
+<p>国王死了，啊。伊丽莎白现在在非洲看大象。</p>
+
+<blockquote>
+  <p>“而他生活在被时间遗忘的地方。”</p>
+</blockquote>
+
+<blockquote>
+  <p>“The fact is,the Crown must win.Must always win.”</p>
+</blockquote>
+
+<p><img src="/assets/9.27/clip_image012.jpg" alt="img" /></p>
+
+<h2 id="ep3">EP3</h2>
+
+<p>先王下葬也美。</p>
+
+<p><img src="/assets/9.27/clip_image014.jpg" alt="img" /></p>
+
+<p>伊丽莎白也好美，看剧的时候我脑子里只有美。</p>
+
+<p>王太后一开始在和侄子讨论庄园美食，但是在听到庄园主任吹嘘王室姓氏将要改变时，便问他们举杯庆祝时杯子里是什么，然后愤怒地说到，你们在我儿子下葬的次日喝香槟。</p>
+
+<blockquote>
+  <p>“这是爱，温斯顿，这是爱，地球上最美好的东西。”温莎公爵说到。</p>
+</blockquote>
+
+<p>为了姓氏、为了住址，菲利普和伊丽莎白吵架了。是温莎公爵和温斯顿之间的交易，让温莎公爵成功说服伊丽莎白。</p>
+
+<h2 id="ep4">EP4</h2>
+
+<p>菲利普还是学开飞机去了，伊丽莎白答应他的两件事情都没做到，他咋还有心情笑嘻嘻的学开飞机呢。</p>
+
+<p>气象局这个图表传来传去的很有意思。</p>
+
+<blockquote>
+  <p>“彩排的时候我不要开窗。”</p>
+
+  <p>“什么彩排？”</p>
+
+  <p>“我的葬礼。”</p>
+</blockquote>
+
+<p>1952年12月5日开始的伦敦雾霾，8000多人死于因这场雾霾而引起的呼吸道疾病。</p>
+
+<blockquote>
+  <p>“君主制是上帝赐予的责任”</p>
+</blockquote>
+
+<p>古代中国也是君权神授，但是中国和英国同样是神授的君主在做着不一样的事情，承担不一样的责任。</p>
+
+<blockquote>
+  <p>“议会可以等。”</p>
+</blockquote>
+
+<blockquote>
+  <p>“充满活力 希望 热情和激情。 “</p>
+</blockquote>
+
+<blockquote>
+  <p>“你能看着她的脑子在飞速运转。 “</p>
+</blockquote>
+
+<p>伊丽莎白真的是坚强智慧女性的代表。而且她好爱菲利普啊。</p>
+
+<h2 id="ep5">EP5</h2>
+
+<blockquote>
+  <p>“借走？从谁哪里？如果它不属于你，那它属于谁呢？”指皇冠</p>
+</blockquote>
+
+<p>温莎公爵每次回来都是被媒体拍拍拍。</p>
+
+<blockquote>
+  <p>“她的血液恐怕在生前就是冰冷的，一如她死后毫无温度”</p>
+</blockquote>
+
+<p>温斯顿在见女皇的时候坐下来了，之前他说过君主对首相是不赐坐的。</p>
+
+<p>伊丽莎白处处为菲利普着想，但是要求他在加冕仪式上向他下跪示忠，并且毫不让步，非常清醒。</p>
+
+<p><img src="/assets/9.27/k.png" alt="img" /></p>
+
+<p>太美了。</p>
+
+<blockquote>
+  <p>“想想你拒绝了这些，拒绝成为神明的机会。”</p>
+
+  <p>“我拒绝它是为了更神圣的东西。”</p>
+</blockquote>
+
+<p>菲利普还是下跪了，向他的女皇。</p>
+
+<p>温莎公爵哭着在吹风笛，后悔、无奈、思念。</p>
+
+<h2 id="ep6">EP6</h2>
+
+<p>打一个电话，在去白金汉宫的途中经过好几（多）道接线员。</p>
+
+<p>英国人真的好喜欢抽烟。</p>
+
+<p>伊丽莎白对妹妹真好！妈妈要来找她的麻烦了。要赶妹妹玛格丽特和她的未婚夫去国外生活，直到她25岁可以自己决定自己的婚姻再回来，这样就不会对皇室产生影响。伊丽莎白之前嫁给菲利普也等了三个月，但是玛格丽特需要等两年。</p>
+
+<p>tick tick tick</p>
+
+<p>电话找了整个白金汉宫，都没找到伊丽莎白。接通后，妹妹说要报复姐姐，啊！</p>
+
+<p>菲利普又去所谓的男士午餐俱乐部，伊丽莎白不高兴了。</p>
+
+<p><img src="/assets/9.27/1569291296785.png" alt="1569291296785" /></p>
+
+<h3 id="ep7">EP7</h3>
+
+<p><img src="/assets/9.27/1569291504801.png" alt="1569291504801" /></p>
+
+<p>幼年伊丽莎白在伊顿公学里。</p>
+
+<p>校长在教幼年伊丽莎白政治，然后伊丽莎白问你也教他们这些吗？校长说，不，我教他们这些。（然后把考试试卷给了伊丽莎白）。伊丽莎白说我需要理解这些吗？校长说，王室不需要知道这些。（试卷上是解方程等数学类的题目）</p>
+
+<p>伊丽莎白请家教了，教授问她什么文凭，她连中学等级的文凭都不敢承认。</p>
+
+<p>要在白金汉宫举行国宴了，邀请美国总统。伊丽莎白在疯狂补习有关奥森豪威尔总统的背景，像是考前抱佛脚。</p>
+
+<p>伊丽莎白为了让马丁接任私人秘书，和现任秘书争吵了一顿。</p>
+
+<blockquote>
+  <p>“因为他们是上流社会的英国男人，保姆的痛斥是他们一生中最想要的东西。”</p>
+</blockquote>
+
+<p>伊丽莎白知道温斯顿瞒着她他中风的事情了。他把首相和外交部长，两个老男人招到宫里来，用宪法当作武器，把这两个英国最聪明的精英训斥了一顿，完全占据上风。</p>
+
+<p>我再一次晕倒，菲利普说伊丽莎白长高了，他给她两个选项，一个是给他高跷，好让他够得着他焕然一新的高个子妻子，或者，让她跪下。伊丽莎白还害羞的笑了，她是女王啊啊啊啊。（对话在床边进行）外面等着的，伊丽莎白的新秘书被通知明天再来。登徒子菲利普！！！！登徒子！！！！！！！！！</p>
+
+<p><img src="/assets/9.27/1569475805954.png" alt="1569475805954" /></p>
+
+<h3 id="ep8">EP8</h3>
+
+<p>伊丽莎白出访殖民地半年，王太后去边远庄园散心，由妹妹代理监国。</p>
+
+<p>王太后伤心于自己似乎已经毫无价值。</p>
+
+<p>玛格丽特自己修改了演讲内容，印象深刻，媒体夸赞。伊丽莎白看到后有一点的失落，也许是嫉妒。</p>
+
+<blockquote>
+  <p>“又一个城市为她倾倒”</p>
+</blockquote>
+
+<p>伊丽莎白都笑得面部痉挛了，打了一针松弛剂，在脸上。</p>
+
+<p>他们两个因为行程太满而吵架，菲利普希望她不要这么努力，说了一些刺激她的话，伊丽莎白直接动手- -，打着打着到院子里，被媒体拍到了。然后伊丽莎白去和媒体说明了情况，媒体把着胶卷送给了伊丽莎白。</p>
+
+<p>王太后买了一个别墅，一百英镑。直到政府派人来找王太后，屋主才知道是她是谁。</p>
+
+<p>伊丽莎白的小名是莉莉贝特(lilibet)。</p>
+
+<blockquote>
+  <p>​	“出彩的应该是君主制度，而不是君主。”</p>
+</blockquote>
+
+<p>玛格丽特和伊丽莎白在争论谁是爸爸最喜欢的女儿哈哈哈哈。</p>
+
+<blockquote>
+  <p>“不，我不累，我只是想要一个能够忍受的未来。”</p>
+</blockquote>
+
+<h3 id="ep9">EP9</h3>
+
+<p>菲利普玩到大半夜才回来，醉醺醺的，伊丽莎白不高兴了。是我我也不高兴，要气死！</p>
+
+<p><img src="/assets/9.27/1569557245360.png" alt="1569557245360" /></p>
+
+<p>找借口你最行。</p>
+
+<p>伊丽莎白给以前喜欢的人波切打电话了！波切在和刚刚求婚的未婚妻在一起，波切：晚安。</p>
+
+<blockquote>
+  <p>“写实靠相机就够了，绘画是更高级的艺术。”</p>
+</blockquote>
+
+<p>呵呵，菲利普又在吃醋伊丽莎白和波切走得太近，你之前干嘛去了你？</p>
+
+<blockquote>
+  <p>“你画的不仅是我，也是大不列颠及北爱尔兰联合王国的首相及其政府代表的一切，民主、自由，政府和领袖的最高理想，记住这一点！”</p>
+</blockquote>
+
+<p>伊丽莎白给了波切一条打给她的专线，OHHH。</p>
+
+<p>菲利普气死我了！</p>
+
+<p>《查特韦尔庄园的金鱼池》是丘吉尔最有名的画作，后被以180万英镑被拍卖。在剧里，给丘吉尔画肖像的画家和他聊到这个事情，说他在画里看到了黑暗。事实上是丘吉尔第五个孩子意外夭折后，丘吉尔才搬到查特韦尔庄园，从那时候起，他开始画金鱼池。</p>
+
+<blockquote>
+  <p>“生日快乐，我的老哈巴狗。”</p>
+</blockquote>
+
+<p>那个画家把丘吉尔画的非常衰老，无力，软弱。但是画家画的是真实的丘吉尔，他确实老了。</p>
+
+<p>丘吉尔辞职了。</p>
+
+<blockquote>
+  <p>“波切就是家人，他像家具一样不可或缺。”</p>
+
+  <p>“是吗？那我希望你不要坐在他的身上。”</p>
+</blockquote>
+
+<p>菲利普这说的是人话吗！？？我气死了，777777777777。</p>
+
+<p>菲利普还高低肩，他根本不像真实的帅气的菲利普，气死我了。</p>
+
+<p>伊丽莎白说我只爱过你一个人，你敢看着我的眼睛说你也是吗？他不敢！！！！！！！！！！！他还在车上和伊丽莎白吵架，还摔门而出，气死我了！！！！</p>
+
+<p>那副画像被烧掉了，丘吉尔也从未停止画池塘。</p>
+
+<p>第九集的情感感觉是珍珠奶茶加了一百块钱的料那么浓。</p>
+
+<h3 id="ep10">EP10</h3>
+
+<p>玛格丽特终于等到了两年了，但是现在管家来告诉伊丽莎白，规定里面还有一条要让玛格丽特再等一年。伊丽莎白：…..</p>
+
+<p>艾登的病其实还没好啊。</p>
+
+<p>汤森回国了！</p>
+
+<p>天启四骑士哈哈哈哈哈哈哈</p>
+
+<blockquote>
+  <p>“我们都是半人，是从离奇的神话故事上扯下的书页，我们内心的两面，人性和王权，永不停止的激烈交战，折磨着我们作为人的一面。”</p>
+</blockquote>
+
+<blockquote>
+  <p>“我有一般永远是国王，但可悲的是我没有王国。但你有，你必须保卫他。”</p>
+</blockquote>
+
+<p>太伤心了，伊丽莎白还是没能为妹妹做到她想要的。</p>
+
+<p>汤森走了，婚姻还没开始就结束了。他们两个就这样分开了，玛格丽特该怎么办嘞。</p>
+
+<blockquote>
+  <p>“别把背叛粉饰成恩惠”</p>
+</blockquote>
+
+<p><img src="/assets/9.27/1569561770082.png" alt="1569561770082" /></p>
+
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>tzj ©
+  
+  
+    1996
+    -
+  
+  2019
+  <br>
+  <!--Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>-->
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
