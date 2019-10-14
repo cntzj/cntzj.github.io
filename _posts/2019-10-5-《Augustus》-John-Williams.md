@@ -3,7 +3,7 @@ layout: post
 title:  "《Augustus》-John Williams"
 date:   2019-10-10 14:05:21 +0800
 tags: book
-color: rgb(255,2550,0)
+color: rgb(25,25,0)
 cover: '../assets/10.5/1571013749771.png'
 subtitle: '《Augustus》'
 ---
