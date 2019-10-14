@@ -4,9 +4,11 @@ title:  "《Rear Window》-Alfred Hitchcock"
 date:   2019-10-12 14:05:21 +0800
 tags: video
 color: rgb(25,25,20)
-cover: '../assets/10.12/1571017962592.png'
+cover: '../assets/10.12/1571028568211.png'
 subtitle: '《Rear Window》'
 ---
+
+![1571028597601](/assets/10.12/1571028597601.png)
 
 杰弗是男主，史泰拉是临时来照顾她的保姆，以下是他们关于爱情的讨论。
 
@@ -54,9 +56,9 @@ subtitle: '《Rear Window》'
 > 杰弗（笑）：她用多少钱买通了你的？
 > 史泰拉气鼓鼓地进厨房去。杰弗把轮椅转向窗外。
 
-![1571028072890](/home/tzj/cntzj.github.io/assets/10.12/1571028072890.png)
+![1571028072890](/assets/10.12/1571028072890.png)
 
-![1571028125254](/home/tzj/cntzj.github.io/assets/10.12/1571028125254.png)
+![1571028125254](/assets/10.12/1571028125254.png)
 
 美就一个字，我要说好多次。
 
