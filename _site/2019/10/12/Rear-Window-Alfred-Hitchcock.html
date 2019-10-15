@@ -1,0 +1,355 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="22" />
+<meta name="keywords" content="33, 44" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>《Rear Window》-Alfred Hitchcock</title>
+<!-- 百度统计 -->
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(25,25,20) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(25,25,20);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">77chaos</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于他爹</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于他爹</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">《Rear Window》-Alfred Hitchcock</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;tzj</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(25,25,20);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="/2019/10/14/El-Camino-A-Breaking-Bad-Movie-Vince-Gilligan.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(25,25,20)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(25,25,20);"><sapn class="main">《El Camino: A Breaking Bad Movie》-Vince Gilligan</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">《Rear Window》-Alfred Hitchcock</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;tzj</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/10/10/Augustus-John-Williams.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(25,25,20)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(25,25,20);"><sapn class="main">《Augustus》-John Williams</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="/2019/10/14/El-Camino-A-Breaking-Bad-Movie-Vince-Gilligan.html" class="leftchange" style="border-right: 1px solid rgb(25,25,20);border-bottom: 2px solid rgb(25,25,20);"><span>上一篇<br><br>《El Camino: A Breaking Bad Movie》-Vince Gilligan</span></a>
+    
+    
+      <a href="/2019/10/10/Augustus-John-Williams.html" class="rightchange" style="border-left: 1px solid rgb(25,25,20);border-bottom: 2px solid rgb(25,25,20);"><span>下一篇<br><br>《Augustus》-John Williams</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(25,25,20); border-right: 8px solid rgb(25,25,20)">
+        《Rear Window》
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <p><img src="/assets/10.12/1571028597601.png" alt="1571028597601" /></p>
+
+<p>杰弗是男主，史泰拉是临时来照顾他的保姆，丽莎·弗里蒙特是杰弗的女朋友，以下是他们关于爱情的讨论。</p>
+
+<blockquote>
+  <p>杰弗：丽莎·弗里蒙特。</p>
+
+  <p>史泰拉：你少开玩笑。她是个美丽的年轻姑娘，而你也是个过得去的健康男子。</p>
+
+  <p>杰弗：她想要我和她结婚。</p>
+
+  <p>史泰拉：这是正常的事。</p>
+
+  <p>杰弗：可我不愿意。</p>
+
+  <p>史泰拉（往他背上啪地敷凉油）：这可就不正常啦。</p>
+
+  <p>杰弗（直皱眉头）：我还不到结婚的时候呢。</p>
+
+  <p>史泰拉：胡说。是个男人就有结婚的时候——找着合适的姑娘就行。而甭管什么人只要有半拉脑子、能睁开一只眼，就看得出丽莎·弗里蒙特是个合适的姑娘。</p>
+
+  <p>杰弗（不动情地）：问题不在她。
+她又啪地往背上敷油，他又皱眉头。</p>
+
+  <p>史泰拉：在每一种奇怪的声明背后，必有一种掩盖起来的真实原因。（瞅瞅他）为的什么？你们打架啦？</p>
+
+  <p>杰弗：没有。</p>
+
+  <p>史泰拉（顿了一下之后）：是她爹在枪里上了子弹啦？</p>
+
+  <p>杰弗：史泰拉，什么话呀！</p>
+
+  <p>史泰拉：这都是古已有之的事，明白吗！要说，这世上有些最美满的婚姻正是用枪口逼着起的头儿。</p>
+
+  <p>杰弗：她这姑娘和我不合适。</p>
+
+  <p>史泰拉：她不过是十全十美。</p>
+
+  <p>杰弗：太十全十美啦。太美丽、太聪明、太有修养，什么都是最好的——只是没有我所需要的。</p>
+
+  <p>史泰拉（诡秘地）：你能说得出口你所需要的是什么吗？</p>
+
+  <p>杰弗（表情气恼非常）：其实很简单。她是属于那种花园街的小圈子里的人物，豪华餐厅啦，文学界鸡尾洒会啦。</p>
+
+  <p>史泰拉：有理性的人能随遇而安。</p>
+
+  <p>杰弗：你难道能想象她跟着一个照相的流浪汉满世界跑吗？我在银行里的存款从来没超过我每星期的薪水。（自言自语地）她要是个普通人就好了。</p>
+
+  <p>史泰拉往他背上扑粉，把粉抹抹开。摄影机向后拉，她扶着杰弗坐起身来。他扣上衬衫。</p>
+
+  <p>史泰拉：你这辈子不结婚啦？</p>
+
+  <p>杰弗：也许不啦。可是如果我结婚，我就得找一个这样的人，在她看来生活绝不是一件新衣服、一顿龙虾餐和最新鲜的丑闻。我需要的是一个去哪儿都行，干什么都能，而且对此心甘情愿的女人。</p>
+
+  <p>摄影机推近。她扶着他坐进轮椅，故意做出一副全神贯注地聆听他的高见的样子。他注意到她的这副神气，再往下说的时候便不那么自以为是了。</p>
+
+  <p>杰弗：唯一的面对现实的办法就是把这事了结掉。让她去找别人吧。</p>
+
+  <p>史泰拉：我现在身边就响起了你们的声音。“你给我出去，你这个十全十美的了不起的女人。你实在太好了，我配不上你！”</p>
+
+  <p>杰弗（停顿了一下）：难就难在这一手。</p>
+
+  <p>她把轮椅掉过来转对着窗口。他又抬头朝外看。</p>
+
+  <p>史泰拉：我说，杰弗里斯先生。我没有受过教育，我甚至谈不上老练，可是我可以明自告诉你——如果一个男人和一个女人看见了对方，而且喜欢对方，他们应该一触即发——“砰”地一声象百老汇大街上两辆出租汽车撞到一起那样。可不能象大口瓶里的两个生物标本那样，脸对脸地彼此琢磨。</p>
+
+  <p>杰弗：对待婚姻有一种理性的办法。</p>
+
+  <p>史泰拉（嗤之以鼻）：理性！再没有比理性给全人类带来的麻烦事儿大啦！现代婚姻，哼！</p>
+
+  <p>杰弗（把轮椅掉过来看着她）：我们在感情上的进展……</p>
+
+  <p>史泰拉（打断他）：废话！早年间就是见见什么人，一兴奋就结婚！……这年头呢，一块儿看本书呀，嘴里说着一套套的成语，你对付我、我对付你呀，要不就是你对她、她对你进行精神分析，到头来谁也弄不清这倒是谈情说爱呢，还是文官考试。</p>
+
+  <p>杰弗：人的感情层次是不同的……</p>
+
+  <p>史泰拉（又打断）：你想找麻烦就非惹麻烦不可！咳，我住的那一带有个挺好的小伙子和对街上一个挺好的姑娘来往了三年。然后他不肯娶她了。为什么？因为在《外貌》杂志关于婚姻的智力测验里，她只得了六十一分！</p>
+
+  <p>杰弗忍不住也笑了。</p>
+
+  <p>史泰拉：我嫁给迈洛斯的时候，我们俩只是格格不入，天差地别。我们现在还是这样。而且我们从来就是各自为政。</p>
+
+  <p>杰弗：你当然挺好了，史泰拉。你能给我弄份三明治吃吗？</p>
+
+  <p>史泰拉（放松下来）：好吧——可是我要往面包上抹点儿常人之见。丽莎·弗里蒙特对你的爱都溢满到手指头尖儿了。我给你的忠告只有两个字：娶她。</p>
+
+  <p>杰弗（笑）：她用多少钱买通了你的？</p>
+
+  <p>史泰拉气鼓鼓地进厨房去。杰弗把轮椅转向窗外。</p>
+
+</blockquote>
+
+<p><img src="/assets/10.12/1571028072890.png" alt="1571028072890" /></p>
+
+<p><img src="/assets/10.12/1571028125254.png" alt="1571028125254" /></p>
+
+<p>美就一个字，我要说好多次。</p>
+
+<p>其实更像是一个爱情电影，丽莎为了他长不大的摔断腿的男孩穿着漂亮的裙子挖土、爬墙、上蹿下跳，这不是爱情那我不同意，都听我的。</p>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>tzj ©
+  
+  
+    1996
+    -
+  
+  2019
+  <br>
+  <!--Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>-->
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
