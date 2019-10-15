@@ -3,7 +3,7 @@ layout: post
 title:  "《A Gentleman in Moscow》-Amor Towles"
 date:   2019-10-15 14:05:21 +0800
 tags: book
-color: rgb(215,25,110)
+color: rgb(250,128,114)
 cover: '../assets/10.15/1571149651413.png'
 subtitle: '《A Gentleman in Moscow》'
 ---
